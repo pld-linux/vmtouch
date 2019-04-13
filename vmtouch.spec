@@ -1,12 +1,11 @@
 Summary:	Portable file system cache diagnostics and control
 Name:		vmtouch
-Version:	1.3.0
+Version:	1.3.1
 Release:	1
 License:	BSD
 Group:		Applications
 Source0:	https://github.com/hoytech/vmtouch/archive/v%{version}.tar.gz
-# Source0-md5:	deaa76af2cadfde293547f1940208b0f
-Patch0:		%{name}-destdir.patch
+# Source0-md5:	46c153c48ab035d37d16e8bc1587e8d8
 URL:		https://hoytech.com/vmtouch/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -16,7 +15,6 @@ cache of unix and unix-like systems.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__make} \
